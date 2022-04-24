@@ -5,7 +5,7 @@ body{
 }
 
 #Section1,#Section2{
-    width:34em;
+    width:37em;
     max-height: 18em;
     min-height: 18em;
     margin-top: 3em;
@@ -47,7 +47,13 @@ td{
     margin: 0px 31px;
 }
 
-span{
+.ShortTest{
     margin: 6px 15px;
+    font-size: 17px;
+}
+
+
+.Longtest{
+    margin: 0px 15px;
     font-size: 17px;
 }
