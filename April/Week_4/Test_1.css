@@ -5,7 +5,7 @@ body{
 }
 
 #Section1,#Section2{
-    width:37em;
+    width:33em;
     max-height: 18em;
     min-height: 18em;
     margin-top: 3em;
@@ -21,7 +21,7 @@ body{
 }
 
 #ParaSec1{
-    padding: 0px 20px;
+    padding: 0px 75px;
     font-size: 20px;
     font-family: 'Square Peg',cursive;
 }
@@ -49,11 +49,11 @@ td{
 
 .ShortTest{
     margin: 6px 15px;
-    font-size: 17px;
+    font-size: 13px;
 }
 
 
 .Longtest{
     margin: 0px 15px;
-    font-size: 17px;
+    font-size: 13px;
 }
