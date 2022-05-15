@@ -1,0 +1,13 @@
+div:first-of-type{
+    height:200px;
+    width:200px;
+    border:1px solid black;
+    position:relative;
+  }
+  
+  .square>div:nth-of-type(1){
+    border-radius:50%;
+    height:100%;
+    width:100%;
+    border:1px solid black;
+  }
