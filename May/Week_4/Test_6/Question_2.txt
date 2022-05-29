@@ -1,0 +1,5 @@
+1. If the variable name which is being accessed doesn't exist in memory space then it would be not defined
+
+2. if exists in memory space but hasn't been assigned any value till now, then it would be undefined.
+
+3. null is an assigned value. It means nothing. 

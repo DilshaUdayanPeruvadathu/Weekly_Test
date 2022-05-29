@@ -1,0 +1,52 @@
+Var
+=====
+1. The var is the oldest keyword
+
+2. The scope of the var keyword is the global or function scope. It means variables defined outside the function can be accessed globally, and variables defined inside a particular function can be accessed within the function. 
+		Eg :     
+			var tester = "hey hi";
+			function newFunction() 
+			{
+        			var hello = "hello";
+				console.log(tester); //prints hey hi
+    			}
+    			console.log(hello); // error: hello is not defined
+
+3. var variables can be re-declared and updated within the same scope and won't get an error
+		Eg :  var greeter = "hey hi";    var greeter = "say Hello instead"; [re-declaration]
+							OR
+			 var greeter = "hey hi";    greeter = "say Hello instead"; [Updation]
+
+
+let
+====
+1. The let is improvised version of var
+
+2. let variables are block scoped 
+		Eg : 
+			let greeting = "say Hi";
+   			let times = 4;
+
+   			if (times > 3) 
+			{
+        			let hello = "say Hello instead";
+       			console.log(hello);// "say Hello instead"
+    			}
+   			console.log(hello) // hello is not defined
+
+3. let can be updated but not re-declared.
+		Eg : [re-declaration]
+			 let greeting = "say Hi";
+  			 let greeting = "say Hello instead"; // error: Identifier 'greeting' has already been declared
+
+		     [updation]
+			 let greeting = "say Hi";    greeting = "say Hello instead";
+			
+		     [if the same variable is defined in different scopes, there will be no error]
+			   let greeting = "say Hi";
+   			   if (true) 
+			   {
+              		let greeting = "say Hello instead";
+        			console.log(greeting); // "say Hello instead"
+    			   }
+    			   console.log(greeting); // "say Hi"

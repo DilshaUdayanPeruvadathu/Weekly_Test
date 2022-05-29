@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+    <script>
+        function Check() {
+            let day;
+            var num = document.getElementById('inputdata').value;
+            alert(num);
+            switch (parseInt(num)) {
+                case 1:
+                    day = "Sunday";
+                    break;
+                case 2:
+                    day = "Monday";
+                    break;
+                case 3:
+                    day = "Tuesday";
+                    break;
+                case 4:
+                    day = "Wednesday";
+                    break;
+                case 5:
+                    day = "Thursday";
+                    break;
+                case 6:
+                    day = "Friday";
+                    break;
+                case 7:
+                    day = "Saturday";
+                    break;
+                default :
+                    day = "give a number between 1-7"
+            }
+            document.getElementById('Answer').innerText = day;
+        }
+    </script>
+</head>
+
+<body>
+    <p>Question : Using SWITCH statement, get the day of the week based on day number, means if the day is 1, the day of week is Sunday. If the day is 2 , it's Monday and so on.</p>
+    <p>Input a number below:</p>
+    <input type="number" id="inputdata"/>
+    <button onclick="Check();" > Submit </button>
+    <p id="Answer"></p>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+    <script>
+        // Function to check if the given  integers value make a rectangle or Square
+        function isRectangle(a, b) {
+            if (a != b)
+                return true;
+            else
+                return false;
+        }
+
+        function submit() {
+            let length = document.getElementById('inputlength').value;
+            let breadth = document.getElementById('inputbredth').value;
+            if (length.length > 0 && breadth.length > 0) {
+                if (isRectangle(length, breadth))
+                    document.getElementById('Answer').innerText = "It create rectangle";
+                else
+                    document.getElementById('Answer').innerText = "It create square";
+            }
+            else{
+                document.getElementById('Answer').innerText = "give number in both text box"
+            }
+        }
+    </script>
+
+    <style>
+        input {
+            margin-left: 1em;
+            height: 2em;
+            margin-top: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>What is initialisation and declaration? </h4>
+    <p>Declaration: The variable is registered using a given name within the corresponding scope.<br>
+        Initialization: When you declare a variable it is automatically initialized, which means memory is allocated for
+        the variable by the JavaScript engine.
+    </p>
+    <br>
+    <br>
+    <h4>Question : Check if for a given length and breadth, is the shape a square or rectangle. (eg: Let's say the
+        length is 10 and breadth is 20, and then check).</h4>
+    <span style="display: flex;">
+        <p>Input a length below:</p> <input type="number" id="inputlength" />
+    </span>
+    <span style="display: flex;">
+        <p>Input a breadth below:</p> <input type="number" id="inputbredth" />
+    </span>
+
+    <button onclick="submit();"> Submit </button>
+    <p id="Answer"></p>
+</body>
+
+</html>

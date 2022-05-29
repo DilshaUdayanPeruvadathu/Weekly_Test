@@ -1,0 +1,27 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+    <script>
+        function showanswer() {
+            var num = document.getElementById('inputdata').value;
+            if (num % 2 == 0)
+                document.getElementById('Answer').innerText = num + " is an Even Number";
+            else
+                document.getElementById('Answer').innerText = num + " is an Odd Number";
+        }
+    </script>
+</head>
+
+<body>
+    <p>Question : Check if a number is odd or even using if-else statement.</p>
+    <p>Input a number below:</p>
+    <input type="number" id="inputdata"/>
+    <button onclick="showanswer();" > Submit </button>
+    <p id="Answer"></p>
+</body>
+
+</html>
