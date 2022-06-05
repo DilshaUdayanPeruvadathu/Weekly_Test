@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Cube()
+        {
+            var num = document.getElementById('inputdata').value;
+            let cube = num * num * num ;
+            document.getElementById('Answer').innerText = cube;
+        }
+    </script>
+</head>
+<body>
+    <h1>Question 2 : Write a program to display the cube of the number upto given an integer.</h1>
+    <h3> Answer : </h3>
+    <p>Input a number below : </p>
+    <input type="number" id="inputdata"/>
+    <button onclick="Cube();" > Submit </button>
+    <p id="Answer"></p>
+</body>
+</html>

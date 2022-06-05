@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function nthPrime ()
+        {
+            var num = document.getElementById('inputdata').value;
+            let i, primes = [2, 3],
+                n = 5;
+            const isPrime = n => {
+                let i = 1,
+                    p = primes[i],
+                    limit = Math.ceil(Math.sqrt(n));
+                while (p <= limit) {
+                    if (n % p === 0) {
+                        return false;
+                    }
+                    i += 1;
+                    p = primes[i];
+                }
+                return true;
+            }
+            for (i = 2; i <= num; i += 1) {
+                while (!isPrime(n)) {
+                    n += 2;
+                }
+                primes.push(n);
+                n += 2;
+            };
+            document.getElementById('Answer').innerText =  primes[num - 1];
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Question 2 : Write to print Nth prime number.(Input: 5, Output: 11, since 11 is the 5th prime number)</h1>
+    <h3> Answer : </h3>
+    <p>Input the value for n : </p>
+    <input type="number" id="inputdata" />
+    <button onclick="nthPrime();"> Submit </button>
+    <p id="Answer"></p>
+</body>
+
+</html>
