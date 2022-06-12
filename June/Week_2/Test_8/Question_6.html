@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-           sortarr.sort(function (a, b) {
+        function kLargest(k) {
+            let sortarr = [1, 23, 12, 9, 30, 2, 50];
+            var n = document.getElementById('inputdata').value;
+
+            //var sortarr = arr.sort((a, b) => b - a);
+            //sortarr.sort();
+            sortarr.sort(function (a, b) {
                 if (a > b) return 1;
                 if (a < b) return -1;
                 return 0;
@@ -14,13 +20,6 @@
             
             document.getElementById('SortedArray').innerText = sortarr;
 
-        function kLargest(k) {
-            let sortarr = [1, 23, 12, 9, 30, 2, 50];
-            var n = document.getElementById('inputdata').value;
-
-            //var sortarr = arr.sort((a, b) => b - a);
-            //sortarr.sort();
-         
             if (n <= sortarr.length) {
                 document.getElementById('Answer').innerText = sortarr[n] + " ";
             } else {
