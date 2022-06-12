@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function CheckElePresent()
+        {
+            var value = document.getElementById('inputdata').value;
+            let arr = ['geek', 'geekster', 'geeky'];
+
+            if(arr.includes(value.toLowerCase()))
+            {
+                document.getElementById('Answer').innerText = "Present";
+            }
+            else
+            {
+                document.getElementById('Answer').innerText = "Not Present";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Question 1 : Write a function to check if geekster exists in your array var list = ['geek', 'geekster', 'geeky'];If it exists  add some code to find the index of geekster and remove that item.</h1>
+    <h3> Answer : </h3>
+    <p>Input the value for search : </p>
+    <input id="inputdata" />
+    <button onclick="CheckElePresent();" > Submit </button>
+    <p id="Answer"></p>
+</body>
+</html>

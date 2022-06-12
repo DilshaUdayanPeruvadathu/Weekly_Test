@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function FindEle() {
+            var val = document.getElementById('inputdata').value;
+            var arr= ['a','b','c','d'];
+            if (arr.indexOf(val) != -1) {
+                document.getElementById('Answer').innerText = "Found";
+            } else {
+                document.getElementById('Answer').innerText = "Not Found";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Question 4 : Find the index position of element in this array var arr= ['a','b','c','d'];</h1>
+    <h3> Answer : </h3>
+    <p>Type which element need to find </p>
+    <input id="inputdata" />
+    <button onclick="FindEle();"> Submit </button>
+    <p id="Answer"></p>
+</body>
+
+</html>

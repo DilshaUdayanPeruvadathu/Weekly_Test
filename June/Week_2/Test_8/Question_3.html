@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function LengthArray()
+        {
+            var arr1 = [,,,];
+            var arr2 = new Array(3);
+            var arr3 = [1,2,3,4,5];
+            var arr4 = [ [1,2,3], [4,5,6]  ];
+            var arr5 = [ [1,2,3], [4,5,6]  ]
+
+            document.getElementById('Answer_A').innerText = "A. var arr1 = [,,,]; ==> " + arr1.length;
+            document.getElementById('Answer_B').innerText = "B. var arr2 = new Array(3); ==> " + arr2.length;
+            document.getElementById('Answer_C').innerText = "C. var arr3 = [1,2,3,4,5]; ==> " + arr3.length;
+            document.getElementById('Answer_D').innerText = "D. var array = [ [1,2,3], [4,5,6]  ]; ==> " + arr4.length;
+            document.getElementById('Answer_E').innerText = "E. var array[0].length = [ [1,2,3], [4,5,6]  ]; ==> " + arr5.length;
+        }
+    </script>
+</head>
+<body>
+    <h1>Question 3 : What is the length of these arrays A. var arr1 = [,,,]; B. var arr2 = new Array(3) C. var arr3 = [1,2,3,4,5] D. var array = [ [1,2,3], [4,5,6]  ];E. var array[0].length = [ [1,2,3], [4,5,6]  ];
+    </h1>
+    <h3> Answer : </h3>
+    <p>Arrays and its length : </p>
+    <button onclick="LengthArray();" > Submit </button>
+    <p id="Answer_A"></p>
+    <p id="Answer_B"></p>
+    <p id="Answer_C"></p>
+    <p id="Answer_D"></p>
+    <p id="Answer_E"></p>
+</body>
+</html>
