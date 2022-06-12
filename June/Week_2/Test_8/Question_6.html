@@ -6,13 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function kLargest(k) {
-            let sortarr = [1, 23, 12, 9, 30, 2, 50];
-            var n = document.getElementById('inputdata').value;
-
-            //var sortarr = arr.sort((a, b) => b - a);
-            //sortarr.sort();
-            sortarr.sort(function (a, b) {
+           sortarr.sort(function (a, b) {
                 if (a > b) return 1;
                 if (a < b) return -1;
                 return 0;
@@ -20,6 +14,13 @@
             
             document.getElementById('SortedArray').innerText = sortarr;
 
+        function kLargest(k) {
+            let sortarr = [1, 23, 12, 9, 30, 2, 50];
+            var n = document.getElementById('inputdata').value;
+
+            //var sortarr = arr.sort((a, b) => b - a);
+            //sortarr.sort();
+         
             if (n <= sortarr.length) {
                 document.getElementById('Answer').innerText = sortarr[n] + " ";
             } else {
@@ -32,9 +33,9 @@
 <body>
     <h1>Question 5 : Find the nth largest element in a sorted array. let arr = [ 1, 23, 12, 9, 30, 2, 50 ];</h1>
     <h3> Answer : </h3>
+    <p id="SortedArray"></p>
     <p>Input Value for n: </p>
     <input type="number" id="inputdata" />
-    <p id="SortedArray"></p>
     <button onclick="kLargest();"> Submit </button>
     <p id="Answer"></p>
 </body>
