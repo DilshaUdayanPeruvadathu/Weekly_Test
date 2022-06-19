@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+    <script>
+        function displayFnameLname()
+        {
+            let friends = [{fname: 'Rachal', lname:"Green" ,id: 1, marks : 98 },
+                       {fname: 'Ross',lname:"Geller" , id: 2, marks : 23 },
+                       {fname: 'Monica ',lname:"Geller" , id: 3, marks : 75 },
+                       {fname: 'Joey',lname:" Tribbiani" , id: 4, marks : 46 },
+                       {fname: 'Chandler  ',lname:"Bing" , id: 5, marks : 78 },
+                       {fname: 'Phoebe',lname:"Buffay" , id: 6, marks : 45 }];
+            var display = "";
+            friends.forEach(element => {
+                var obj = element;
+                display = display +"\n"+ "Full Name_"+obj.id+ " = " +obj.fname + "  " + obj.lname;
+            });
+            document.getElementById('Answer').innerText = display;
+        }
+    </script>
+</head>
+<body>
+    <h1>Question 1 : Multiple records of people are given, you have to print the first name and last name . 
+        let friends = [{fname: 'Rachal', lname:"Green" ,id: 1, marks : 98 },
+                       {fname: 'Ross',lname:"Geller" , id: 2, marks : 23 },
+                       {fname: 'Monica ',lname:"Geller" , id: 3, marks : 75 },
+                       {fname: 'Joey',lname:" Tribbiani" , id: 4, marks : 46 },
+                       {fname: 'Chandler  ',lname:"Bing" , id: 5, marks : 78 },
+                       {fname: 'Phoebe',lname:"Buffay" , id: 6, marks : 45 }]</h1>
+    <h3> Answer : </h3>
+    <button onclick="displayFnameLname();" > Submit </button>
+    <p id="Answer"></p>
+</body>
+</html>

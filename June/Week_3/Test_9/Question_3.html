@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+    <script>
+        function AddElement()
+        {
+            var value = document.getElementById('inputdata').value;
+
+            if(value.trim().length>0)
+            {
+                var node = document.createElement('li');
+                node.appendChild(document.createTextNode(value));
+
+                document.querySelector('ul').appendChild(node);
+                document.getElementById('inputdata').value = "";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Question 3 : You are given some names of different cities and a ordered list html element; add a list item for each to the ordered list.   city = ['Delhi', 'Mumbai', 'Jaipur','Kolkata','Indore' ];</h1>
+    <h3> Answer : </h3>
+    <p>Add new items to list : </p>
+    <input id="inputdata" />
+    <button onclick="AddElement();" > Submit </button>
+    <p id="Answer"> </p>
+    <ul>
+        <li>Delhi</li>
+    </ul>
+</body>
+</html>
