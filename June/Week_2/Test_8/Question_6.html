@@ -7,7 +7,7 @@
     <title>Questio 6</title>
     <script>
         function kLargest(k) {
-            let sortarr = [1, 23, 12, 9, 30, 2, 50];
+            let sortarr = [1,2,3,4,5,6,7,8,9,10];
             var n = document.getElementById('inputdata').value;
 
             //var sortarr = arr.sort((a, b) => b - a);
@@ -26,6 +26,13 @@
                 document.getElementById('Answer').innerText = "Invalid Data";
             }
         }
+
+        function nthlargestElement(arr,n){
+let l=arr.length-n
+console.log(arr[l])
+}
+nthlargestElement([1,2,3,4,5,6,7,8,9,10],3)
+
     </script>
 </head>
 
